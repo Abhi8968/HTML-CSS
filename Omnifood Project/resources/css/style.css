@@ -58,7 +58,7 @@ h1,h2,h3
     font-weight: 300;
     text-transform: uppercase;
 }
-/*Header Heading Properties*/
+/* Header Heading Properties*/
 h1
 {
     margin-top: 0;
@@ -79,11 +79,11 @@ h1
     letter-spacing: 1px;
 } 
 
-/*Section Features Heading Properties*/
+/* Section Features Heading Properties*/
 h2
 {
     font-size: 180%;
-    word-spacing: 2PX;
+    word-spacing: 2px;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -204,11 +204,16 @@ h2:after
 /* Section Paragraphs */
 /*-------------------------------*/
 
+.section-features .long-copy
+{
+    margin-bottom: 30px;
+}
+
 .long-copy 
 {
     line-height: 145%;
-    width: 70%;
-    margin-left: 15%;
+    width: 68%;
+    margin-left: 17%;
 }
 
 .box p 
@@ -227,4 +232,50 @@ h2:after
     display: block;
     color: #e67e22;
     margin-bottom: 10px;
+}
+
+/*-------------------------------*/
+/* Sectiion Meals */
+/*-------------------------------*/
+.meals-showcase
+{
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li
+{
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+/*-------------------------------*/
+/* Sectiion Meals Images*/
+/*-------------------------------*/
+.section-meals
+{
+    padding: 0;
+}
+
+.meal-photo
+{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+.meal-photo img
+{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover
+{
+    transform: scale(1);
+    opacity: 1;
 }
