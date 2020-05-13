@@ -36,6 +36,16 @@ html
     text-rendering: optimizeLegibility;
 }
 
+.clearfix {zoom: 1}
+.clearfix:after
+{
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+    
+}
 /*-------------------------------*/
 /* Header */
 /*-------------------------------*/
@@ -251,7 +261,7 @@ h2:after
 }
 
 /*-------------------------------*/
-/* Sectiion Meals Images*/
+/* Sectiion Meals Images Properties */
 /*-------------------------------*/
 .section-meals
 {
@@ -278,4 +288,76 @@ h2:after
 {
     transform: scale(1);
     opacity: 1;
+}
+
+/*-------------------------------*/
+/* Sectiion How It Works */
+/*-------------------------------*/
+
+.section-steps
+{
+    background-color: #f4f4f4;
+}
+
+/*--------------------------------------*/
+/* Sectiion How It Works First Child */
+/*--------------------------------------*/
+
+.steps-box:first-child
+{
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+    
+}
+
+.app-screen
+{
+    width: 40%;
+}
+
+/*--------------------------------------*/
+/* Sectiion How It Works Last Child */
+/*--------------------------------------*/
+
+.steps-box:last-child
+{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.works-step
+{
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type
+{
+    margin-bottom: 80px;
+}
+
+.works-step div
+{
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px; 
+}
+
+/*-----------------------------------------------------*/
+/* Sectiion How It Works Last Child Image Properties*/
+/*-----------------------------------------------------*/
+.btn-app img
+{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+    
 }
