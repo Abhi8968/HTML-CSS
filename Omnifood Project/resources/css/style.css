@@ -244,6 +244,22 @@ h2:after
     margin-bottom: 10px;
 }
 
+.icon-small
+{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+    
+    /*Secrets to align text and icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -6px;
+    
+}
+
 /*-------------------------------*/
 /* Sectiion Meals */
 /*-------------------------------*/
@@ -317,7 +333,7 @@ h2:after
 }
 
 /*--------------------------------------*/
-/* Sectiion How It Works Last Child */
+/* Section How It Works Last Child */
 /*--------------------------------------*/
 
 .steps-box:last-child
@@ -352,12 +368,53 @@ h2:after
 }
 
 /*-----------------------------------------------------*/
-/* Sectiion How It Works Last Child Image Properties*/
+/* Section How It Works Last Child Image Properties*/
 /*-----------------------------------------------------*/
+.btn-app:link, btn-app:visited
+{
+  border-bottom: 0;   
+}
+
 .btn-app img
 {
     height: 50px;
     width: auto;
     margin-right: 10px;
+    
+}
+
+/*-----------------------------------------------------*/
+/* Cities*/
+/*-----------------------------------------------------*/
+
+.box img
+{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature
+{
+    margin-bottom: 5px;
+
+}
+
+/*-----------------------------------------------------*/
+/* Links*/
+/*-----------------------------------------------------*/
+
+a:link, a:visited
+{
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.4s, color 0.4s;
+}
+
+a:hover, a:active
+{
+    color: #555;
+    border-bottom: 1px solid transparent;
     
 }
